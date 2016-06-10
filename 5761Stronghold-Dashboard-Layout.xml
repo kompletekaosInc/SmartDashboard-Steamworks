@@ -1,0 +1,14 @@
+<xml version="1.0">
+<dashboard>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="46" y="51"/>
+		<property name="Text" value="Connected to 5761 Robot"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.ConnectionIndicator">
+		<location x="214" y="41"/>
+		<width>121</width>
+	</static-widget>
+</dashboard>
+<live-window>
+</live-window>
+</xml>
