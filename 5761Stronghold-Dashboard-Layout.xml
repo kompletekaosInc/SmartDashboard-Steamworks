@@ -1,11 +1,35 @@
 <xml version="1.0">
 <dashboard>
+	<widget field="Gyro Installed" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="458" y="90"/>
+	</widget>
+	<widget field="gyroAngle" type="String" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="479" y="119"/>
+	</widget>
+	<widget field="speed" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="0" y="203"/>
+	</widget>
+	<widget field="CurrentMillis" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="0" y="176"/>
+	</widget>
+	<widget field="rightPower" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="483" y="229"/>
+	</widget>
+	<widget field="leftPower" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="491" y="201"/>
+	</widget>
+	<widget field="throttle" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="0" y="68"/>
+	</widget>
+	<widget field="side" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="20" y="93"/>
+	</widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
-		<location x="46" y="51"/>
+		<location x="324" y="22"/>
 		<property name="Text" value="Connected to 5761 Robot"/>
 	</static-widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.ConnectionIndicator">
-		<location x="214" y="41"/>
+		<location x="489" y="13"/>
 		<width>121</width>
 	</static-widget>
 </dashboard>
