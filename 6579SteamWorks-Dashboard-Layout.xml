@@ -1,0 +1,72 @@
+<xml version="1.0">
+<dashboard>
+	<widget field="rightToughbox" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="2" y="263"/>
+	</widget>
+	<widget field="leftToughbox" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="12" y="235"/>
+	</widget>
+	<widget field="gyro turning" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="350" y="302"/>
+		<width>104</width>
+		<height>35</height>
+	</widget>
+	<widget field="arcadeDrive" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="20" y="363"/>
+		<width>118</width>
+		<height>46</height>
+	</widget>
+	<widget field="takenAngle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="332" y="242"/>
+	</widget>
+	<widget field="frontIsGear" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="21" y="307"/>
+		<width>155</width>
+		<height>34</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.ConnectionIndicator">
+		<location x="185" y="2"/>
+		<width>189</width>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="38" y="32"/>
+		<height>31</height>
+		<property name="Text" value="Fuel Subsystem"/>
+	</static-widget>
+	<widget field="offloadLimitReached" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="9" y="128"/>
+		<width>164</width>
+	</widget>
+	<widget field="lowerLimitReached" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="7" y="106"/>
+		<width>156</width>
+	</widget>
+	<widget field="upperLimitReached" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="7" y="86"/>
+		<width>158</width>
+	</widget>
+	<widget field="Climber Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="348" y="362"/>
+	</widget>
+	<widget field="fuelMotor" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="6" y="59"/>
+	</widget>
+	<widget field="Joystick Throttle" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="371" y="129"/>
+		<height>29</height>
+	</widget>
+	<widget field="Gyro Angle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="335" y="273"/>
+	</widget>
+	<widget field="Auto Selector" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="405" y="9"/>
+	</widget>
+	<widget field="Gyro Installed" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="406" y="61"/>
+	</widget>
+</dashboard>
+<live-window>
+</live-window>
+	<hidden field="Gyro angle"/>
+	<hidden field="Flap State"/>
+</xml>
