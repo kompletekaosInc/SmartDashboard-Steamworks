@@ -1,76 +1,118 @@
 <xml version="1.0">
 <dashboard>
-	<widget field="Gyro Angle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
-		<location x="344" y="172"/>
+	<widget field="finalPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="874" y="539"/>
+		<width>143</width>
 	</widget>
-	<widget field="takenAngle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
-		<location x="346" y="140"/>
+	<widget field="Peg X" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1039" y="415"/>
+		<width>98</width>
+	</widget>
+	<widget field="rightToughbox" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="9" y="228"/>
+	</widget>
+	<widget field="leftToughbox" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="10" y="205"/>
+	</widget>
+	<widget field="gyroTurn.left" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="407" y="312"/>
+		<width>137</width>
+		<height>27</height>
+	</widget>
+	<widget field="getModGyroAngle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="386" y="256"/>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="441" y="121"/>
+		<property name="Text" value="Autonomous"/>
+	</static-widget>
+	<widget field="trackVisionComplete" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="782" y="474"/>
+		<width>175</width>
+		<height>26</height>
+	</widget>
+	<widget field="Autonomous Code Selector" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="387" y="130"/>
+	</widget>
+	<widget field="leftMiddle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="789" y="506"/>
+		<width>125</width>
+	</widget>
+	<widget field="rightStopPower" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="3" y="350"/>
+	</widget>
+	<widget field="leftStopPower" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="6" y="326"/>
+	</widget>
+	<widget field="gyroTurn.targetAngle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="361" y="374"/>
+	</widget>
+	<widget field="rightMiddle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1005" y="505"/>
+		<width>133</width>
+	</widget>
+	<widget field="Gyro Angle" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="407" y="237"/>
 	</widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
-		<location x="613" y="96"/>
+		<location x="776" y="88"/>
 		<width>429</width>
 		<height>322</height>
 		<property name="Camera Choice" value=""/>
 	</static-widget>
-	<widget field="Peg X" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="881" y="424"/>
-	</widget>
 	<widget field="Vision.performVisionTracking" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
-		<location x="738" y="507"/>
+		<location x="987" y="474"/>
 		<width>220</width>
 		<height>26</height>
 	</widget>
 	<widget field="r.width" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="860" y="464"/>
+		<location x="1032" y="447"/>
+		<width>120</width>
 	</widget>
 	<widget field="r.x" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="662" y="466"/>
+		<location x="798" y="441"/>
+		<width>89</width>
 	</widget>
 	<widget field="number of contours" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="612" y="423"/>
+		<location x="775" y="416"/>
+		<width>181</width>
 	</widget>
 	<widget field="Autonomous code selector" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
-		<location x="308" y="309"/>
+		<location x="793" y="785"/>
 	</widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
-		<location x="414" y="120"/>
-		<property name="Text" value="Gyro"/>
+		<location x="446" y="220"/>
+		<property name="Text" value="Gyro info"/>
 	</static-widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
-		<location x="82" y="213"/>
-		<property name="Text" value="Drivetrain"/>
+		<location x="33" y="190"/>
+		<property name="Text" value="Drivetrain Subsystem"/>
 	</static-widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
-		<location x="806" y="73"/>
-		<property name="Text" value="Camera"/>
+		<location x="932" y="64"/>
+		<property name="Text" value="Camera and Vision"/>
 	</static-widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
 		<location x="606" y="10"/>
 		<property name="Text" value="Connected?"/>
 	</static-widget>
 	<widget field="Gyro Installed" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
-		<location x="363" y="204"/>
+		<location x="410" y="279"/>
 		<width>138</width>
 		<height>28</height>
 	</widget>
-	<widget field="rightToughbox" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="2" y="263"/>
-	</widget>
-	<widget field="leftToughbox" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="12" y="235"/>
-	</widget>
 	<widget field="gyro turning" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
-		<location x="363" y="239"/>
+		<location x="408" y="345"/>
 		<width>129</width>
 		<height>31</height>
 	</widget>
 	<widget field="arcadeDrive" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
-		<location x="22" y="350"/>
-		<width>157</width>
-		<height>36</height>
+		<location x="60" y="298"/>
+		<width>100</width>
+		<height>22</height>
 	</widget>
 	<widget field="frontIsGear" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
-		<location x="21" y="307"/>
+		<location x="27" y="257"/>
 		<width>155</width>
 		<height>34</height>
 	</widget>
@@ -96,7 +138,7 @@
 		<width>158</width>
 	</widget>
 	<widget field="Climber Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="349" y="38"/>
+		<location x="397" y="61"/>
 		<height>31</height>
 	</widget>
 	<widget field="fuelMotor" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
@@ -113,6 +155,142 @@
 	</static-widget>
 </dashboard>
 <live-window>
+	<widget field="Ungrouped" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="VictorSP[1]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[1]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="DigitalInput[7]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="DigitalInput[7]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[9]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[9]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="ADXRS450_Gyro[0]" type="Table" class="edu.wpi.first.smartdashboard.gui.elements.Compass">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="ADXRS450_Gyro[0]" type="Table" class="edu.wpi.first.smartdashboard.gui.elements.Compass">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[3]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[3]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="DigitalInput[9]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="DigitalInput[9]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[5]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[5]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="DigitalInput[8]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="DigitalInput[8]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[8]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[8]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[2]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[2]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[0]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<widget field="VictorSP[0]" type="Table" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="0" y="0"/>
+			<height>0</height>
+			<width>0</width>
+		</widget>
+		<location x="0" y="0"/>
+		<width>335</width>
+		<height>616</height>
+	</widget>
 </live-window>
+	<hidden field="scaled finalPosition"/>
+	<hidden field="reachedBaseline"/>
+	<hidden field="TrackingTime"/>
+	<hidden field="turn right angleToTurn"/>
+	<hidden field="rightTape.y"/>
+	<hidden field="System.currentTimeMillis()"/>
+	<hidden field="rightTape.x"/>
+	<hidden field="leftTape.width"/>
 	<hidden field="Auto Selector"/>
+	<hidden field="centreOfDistanceBetweenTapes"/>
+	<hidden field="Auton selection"/>
+	<hidden field="turn right targetAngle"/>
+	<hidden field="turnComplete"/>
+	<hidden field="rightTape.width"/>
+	<hidden field="Final middle X"/>
+	<hidden field="powerIncrement"/>
+	<hidden field="leftTape.x"/>
+	<hidden field="Close to Peg"/>
+	<hidden field="Two contours"/>
+	<hidden field="turn left angleToTurn"/>
+	<hidden field="msTrackingPegStartTime"/>
+	<hidden field="turn left targetAngle"/>
 </xml>
